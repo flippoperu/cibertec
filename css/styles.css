@@ -176,6 +176,11 @@ aside div{
 	vertical-align: top;
 }
 
+
+.div-100-porciento{
+	width: 100% !important;
+}
+
 #img-01 , #img-02{
 	width: 100%;
 }

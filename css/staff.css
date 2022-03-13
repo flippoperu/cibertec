@@ -1,0 +1,41 @@
+.div-ancho-fijo div .div-staff {
+	display: inline-block;
+	width: 45%;
+	text-align: center;
+}
+
+.div-ancho-fijo div .div-staff div img {
+	width: 100%;
+	min-width: 90%;
+	transition: all .2s ease-in-out;
+}
+
+.div-ancho-fijo div .div-staff div img:hover{
+	font-weight: bold;
+	color: #145cdb;
+	transform: scale(1.1);
+}
+
+.div-ancho-fijo div .div-staff div {
+	margin-top: 20px;
+}
+
+.div-staff-titulo{
+	color: black;
+	background-color: aliceblue;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.container-display-inline-block{
+	padding: 10px 0 10px 0;
+}
+
+
+ @media only screen and (max-width: 1204px) {
+	.div-ancho-fijo div .div-staff div img {
+		width: 100%;
+		min-width: 100%;
+		transition: all .2s ease-in-out;
+	}
+}

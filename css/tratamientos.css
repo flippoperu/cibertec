@@ -1,0 +1,28 @@
+.div-ancho-fijo div .div-tratamientos {
+	display: inline-block;
+	width: 45%;
+	text-align: center;
+}
+
+.div-ancho-fijo div .div-tratamientos div img {
+	width: 100%;
+	min-width: 90%;
+	transition: all .2s ease-in-out;
+}
+
+.div-ancho-fijo div .div-tratamientos div img:hover{
+	font-weight: bold;
+	color: #145cdb;
+	transform: scale(1.1);
+}
+
+.div-ancho-fijo div .div-tratamientos div {
+	margin-top: 20px;
+}
+
+.div-tratamientos-titulo{
+	color: black;
+	background-color: aliceblue;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
