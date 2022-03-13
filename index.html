@@ -1,56 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
+	
+	<!-- NO TOCAR --------------------------------------------------------------->
 	<title>Proyecto Final Html5</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/codigo.js"></script>
+	<!-- STYLES.CSS ES LA BASE DE TODO EL CSS -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/hamburguesa.css">
+	<!--------------------------------------------------------------------------->
+
 </head>
 <body>
 	<div class="container color-fondo-0">
-		<div class="container-block container-block-padding-top-bottom">
-			<header>
+		<div id="" class="container-block container-block-padding-top-bottom">
+			<header id="#header">
 				<div class="div-logo">
-					Clínica Full Visión
+					<a class="texto-color-blanco" href="index.html">Clínica Iris Sac</a>
 				</div>
+				<a href="#" id="menu_on">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
 			</header>
 			<nav>
 				<ul>
-					<li><a href="#" class="primer-link">Inicio</a></li>
-					<li><a href="#">Tratamientos</a></li>
-					<li><a href="#">Staff Médico</a></li>
-					<li><a href="#">Contacto</a></li>
-					<li><a href="#">Testimonios</a></li>
-					<li><a href="#">Prensa</a></li>
+					<li><a href="index.html" class="primer-link">Inicio</a></li>
+					<li><a href="tratamientos.html">Tratamientos</a></li>
+					<li><a href="staff.html">Staff Médico</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="testimonios.html">Testimonios</a></li>
+					<li><a href="prensa.html">Prensa</a></li>
 				</ul>
 			</nav>	
 		</div>
 		<section>
 			<article>
-				<div style="background: url(https://www.oculaserperu.com/assets/images/fondo-ojos-full.png) no-repeat center center fixed;
-					 height:  340px;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
-					<div class="div-margin-bottom-30 container-block" style="position: relative;top: 0px;font-weight: 100;color: white;font-size: 18px;">
-						<div class="container-display-inline-block" style="text-align: left;width: 492px;margin-top: 116px;font-size: 24px;">
+				<div id="banner-principal">
+					<div class="div-margin-bottom-30 container-block div-banner-principal">
+						<div class="container-display-inline-block banner-izquierda">
 							<div class="texto-izquierda">
-								Deja de usar lentes con "Full Visión"	
+								Deja de usar lentes con "Iris Sac"	
 							</div>
 							<div class="texto-izquierda div-margin-top-10">
 								Más de 20 años de experiencia	
 							</div>
 							<div class="texto-izquierda div-margin-top-10">
-								
 								<b class="negrita-especial">Agenda tu evaluación</b>
-
 							</div>
 						</div>
-						<div class="container-display-inline-block" 
-							 style="width: 222px;margin-top: 50px;font-size: 21px;">
+						<div class="container-display-inline-block banner-derecha">
 							<div class="texto-centro">
 								Evaluación - Cirugía Lasik Femtolasik
 							</div>
@@ -89,7 +97,7 @@
 					<div class="div-ancho-fijo">
 						<div class="div-margin-top-10 div-sombra ">
 							<div class="texto-izquierda container-block texto-centro div-margin-bottom-10">
-								<div class="container-display-inline-block color-fondo-3 div-30-width">
+								<div class="container-display-inline-block color-fondo-3 div-30-width contenedor-100">
 									<div class="texto-color-blanco  texto-izquierda">
 										<h3>Más de 20 años de <b class="text-color-negro-intenso">EXPERIENCIA.</b></h3>			
 									</div>
@@ -109,8 +117,8 @@
 										</h5>
 									</div>
 								</div>
-								<div class="container-display-inline-block color-fondo-4 div-30-width">
-									<div class="texto-color-blanco  texto-izquierda">
+								<div class="container-display-inline-block color-fondo-4 div-30-width contenedor-100 div-ultima-caja">
+									<div class="texto-color-blanco  texto-izquierda"> 
 										<h3>Más de 300 empresas <b>SATISFECHAS.</b></h3>
 									</div>
 									<div class="texto-color-blanco  texto-izquierda div-margin-top-10">
@@ -124,25 +132,19 @@
 					</div>
 				</div>
 			</article>
-
-
-
 			<article>
 				<div class="container-block div-logos texto-centro">
 					<div class="div-ancho-fijo">
 						<div class="div-sombrax">
 							<div class="texto-izquierda container-block texto-centro div-margin-bottom-10">
 								<div class="div-margin-top-10 div-margin-bottom-10x">
-									<iframe  style="vertical-align: top;" width="100%" height="515" src="https://www.youtube.com/embed/9fLCfNtjimA" title="Operación de ojos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+									<iframe class="video-youtube" src="https://www.youtube.com/embed/9fLCfNtjimA" title="Operación de ojos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</article>
-
-
 			<article>
 				<div class="container-block div-logos texto-centro">
 					<div class="div-ancho-fijo">
@@ -180,20 +182,19 @@
 					</div>
 				</div>
 			</article>
-
-
-	
-
-
-			<article class="div-margin-top-50 ">
-				<div class="div-ancho-fijo-formulario div-margin-top-10 color-fondo-2 texto-color-blanco div-padding-bottom-20 ">
+			<article class="div-margin-top-50 container-block div-container-registrate">
+				<div class="div-width-70 container-display-inline-block">
+					<img id="img-01" src="imagenes/sorprendido.png" />
+					<img id="img-02" src="imagenes/sorprendido-2.png" />
+				</div>
+				<div class="div-width-30 container-display-inline-block div-ancho-fijo-formulario div-margin-top-10 color-fondo-2 texto-color-blanco div-padding-bottom-20">
 					<div class="container-display-inline-block div-margin-top-30 div-margin-bottom-30">
 						<div class="div-margin-top-10 div-margin-bottom-10">
 							<div>
 								<h2><b>¿Deseas que te llamemos?</b></h2>
 							</div>
 							<div>
-								<h2></b>Regístrate ahora</b></h2>
+								<h2><b>Regístrate ahora</b></h2>
 							</div>
 						</div>
 						<div class="container-block texto-izquierda ">
@@ -201,8 +202,12 @@
 							<input class="div-margin-top-10" type="text" name="nombres" id="nombres" placeholder="ingrese datos...">
 						</div>
 						<div class="container-block texto-izquierda ">
-							<div class="div-margin-top-10">Apellidos:</div>
-							<input class="div-margin-top-10" type="text" name="apellidos" id="apellidos" placeholder="ingrese datos...">
+							<div class="div-margin-top-10">Apellido Paterno:</div>
+							<input class="div-margin-top-10" type="text" name="apepat" id="apepat" placeholder="ingrese datos...">
+						</div>
+						<div class="container-block texto-izquierda ">
+							<div class="div-margin-top-10">Apellido Materno:</div>
+							<input class="div-margin-top-10" type="text" name="apemat" id="apemat" placeholder="ingrese datos...">
 						</div>
 						<div class="container-block texto-izquierda ">
 							<div class="div-margin-top-10">Celular:</div>
@@ -225,49 +230,32 @@
 					</div>
 				</div>
 			</article>
-
-			<!--
 			</article>
-			<aside>
-				<div>
-					<div>
-						Separa una cita
-					</div>
-					<div>
-						input 1
-					</div>
-					<div>
-						input 2
-					</div>
-					<div>
-						input 3
-					</div>
-					<div>
-						input 4
-					</div>
-					<div>
-						Enviar
-					</div>
-				</div>
+			<aside >
+				<a href="chatbot.html">
+					<img src="imagenes/bot.png">
+					<div class="div-padding-bottom-10 div-padding-top-10 color-fondo-4">
+						Chatbot	
+					</div>	
+				</a>
 			</aside>
-			-->
 		</section>
 		<div class="div-break-line">
 		</div>
 		<footer class="color-fondo-99 container-block-padding-top-bottom  " >
 			<div class="container-display-inline-block div-90-ajustable">
-				www.mirasinlentes.com	
+				<a class="texto-color-blanco" href="index.html">www.clinicairissac.com</a>
 			</div>
 			<div class="container-display-inline-block">
 				<div class="iconos-sociales">
-					<img src="imagenes/facebook.png">
-					<img src="imagenes/twitter.png">
-					<img src="imagenes/instagram.png">
-					<img src="imagenes/youtube.png">
-					<img src="imagenes/whatsapp.png">
+					<a href="https://www.facebook.com" target="blank"><img src="imagenes/facebook.png"/></a>
+					<a href="https://www.twitter.com" target="blank"><img src="imagenes/twitter.png"/></a>
+					<a href="https://www.instagram.com" target="blank"><img src="imagenes/instagram.png"/></a>
+					<a href="https://www.youtube.com" target="blank"><img src="imagenes/youtube.png"/></a>
+					<a href="https://www.whatsapp.com" target="blank"><img src="imagenes/whatsapp.png"/></a>
 				</div>
 			</div>
 		</footer>
-	</div>	
+	</div>
 </body>
 </html>

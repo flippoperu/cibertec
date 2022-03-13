@@ -9,7 +9,7 @@ a{
 }
 
 a:hover{
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 }
 
 header{
@@ -56,14 +56,15 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-	font-weight: bold;
-	color: white;
+	
+	color: #0c53d2;
 }
 
 nav ul li:hover{
-	background-color: #0c53d2;
-	font-weight: bolder;
+	/*background-color: #0c53d2;*/
+	 
 	color: white;
+  border-bottom: 4px solid #0c53d2;
 }
 
 h3{
@@ -95,8 +96,30 @@ select{
 
 }
 
+aside:hover{
+  right: 10px;
+}
+
+aside img{
+	padding: 12px;	
+    max-width: 28px;
+}
+
+aside div{
+	font-size: 9px;
+	color:white
+}
+
+#img-01{
+	display: block;
+}
+
+#img-02{
+	display: none;
+}
+
 .div-logo{
-	width: 80%;
+	width: 53%;
 	height: 16px;
 	background-color: #145cdb;
 	color: white;
@@ -108,12 +131,13 @@ select{
 }
 
 .div-logo:hover{
-	font-weight: bolder;
-	font-size: 1.1em;
+	/*font-weight: bolder;
+	font-size: 1.1em;*/
 }
 
 .primer-link{
-	color:  red;
+	color:  black;
+	font-weight: bolder;
 }
 
 .img-portada{
@@ -144,6 +168,16 @@ select{
 	vertical-align: top;
 	text-align: left;
 	max-width: 260px;	
+}
+
+.video-youtube{
+	width: 100%;
+	height: 515px;
+	vertical-align: top;
+}
+
+#img-01 , #img-02{
+	width: 100%;
 }
 
 .div-margin-top-10{
@@ -277,7 +311,6 @@ select{
 .color-fondo-1{
 	background-color: #ffffff;
 }
-
 .color-fondo-2{
 	background-color: #145cdb;
 }
@@ -285,57 +318,46 @@ select{
 .color-fondo-3{
 	background-color: #0c53d2;
 }
-
 .color-fondo-4{
 	background-color: #102951;
 }
-
 .color-fondo-99{
 	background-color: #3a6bb8;
 }
-
 .color-fondo-n{
 	background-color: white;
 }
-
 .container{
 	margin: auto;
 	width: 100%;
 	text-align: center;
 }
-
 .container-block{
 	display: block;
 	width: 100%;
 	padding-top: 10px;
 }
-
 .container-block-video{
 	display: block;
 	width: 100%;
 }
-
 .container-display-inline-block{
 	display: inline-block;
 	vertical-align: top;
 }
-
 .container-display-inline-block-middle{
 	display: inline-block;
 	vertical-align: middle;
 }
-
 .container-block-padding-top-bottom{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-
 .div-sombra{
 	box-shadow: 9px 10px 110px 4px rgba(0,0,0,0.07);
 	-webkit-box-shadow: 9px 10px 110px 4px rgba(0,0,0,0.07);
 	-moz-box-shadow: 9px 10px 110px 4px rgba(0,0,0,0.07);
 }
-
 .div-borde-redondeado{
 	border-radius: 20px;
 }
@@ -343,12 +365,10 @@ select{
 .iconos-sociales img{
 	width: 25px;
 }
-
 .div-90-ajustable{
     text-align: left;
     width: 80%;
 }
-
 .boton{
 	background-color: #145cdb;
 	padding: 12px;
@@ -356,13 +376,9 @@ select{
 	font-size: 15px;
 	cursor: pointer;
 }
-
-
 .boton:hover{
 	background-color: #3a6bb8;
 }
-
-
 .boton-formulario{
 	background-color: #102951;
 	padding: 12px 0px 12px 0px;
@@ -370,17 +386,177 @@ select{
 	font-size: 15px;
 	cursor: pointer;
 }
-
-
+.boton-formulario:hover{
+	background-color: #3a6bb8;
+}
 .boton:hover{
 	background-color: #3a6bb8;
 }
-
 .boton-ancho{
 	width: 184px;
 }
-
 .negrita-especial{
 	font-weight: revert;
 	text-decoration: underline;
+}
+aside{
+	position: fixed;
+	top: 50%;
+	right: 0px;
+	background-color: white;
+		animation:botanimacion 1s;
+    -moz-animation:botanimacion 1s;
+    -webkit-animation:botanimacion 1s
+}
+@keyframes mostrarlogo{
+    from {right: 0px;} 
+    to{right:20px;} 
+}
+@-moz-keyframes mostrarlogo{
+    from {right: 0px;} 
+    to{right:20px;} 
+}
+@-webkit-keyframes mostrarlogo{
+    from {right: 0px;} 
+    to{right:20px;} 
+}
+@keyframes botanimacion{
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 10px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+.div-width-70{
+	width: 70%;
+    max-width: 815px;
+}
+.div-width-30{
+	width: 30%;
+    min-width: 350px;
+}
+.div-banner-principal{
+	padding-top: 140px;
+}
+#banner-principal{
+	background: url(../imagenes/chica-min.jpg)
+	no-repeat center center fixed;
+	height:  610px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;top: 0px;font-weight: 100;color: white;font-size: 18px;
+}
+#banner-principal div .banner-izquierda{
+	text-align: center;
+	width: 492px;
+	margin: auto;
+	margin-top: 116px;
+	font-size: 24px;
+}
+#banner-principal div .banner-derecha{
+	width: 222px;margin-top: 50px;font-size: 21px;
+}
+@media only screen and (max-width: 990px) {
+    .div-30-width{
+    	width: 100%;   
+    	text-align: center;
+    }
+}
+@media only screen and (max-width: 1184px) {
+    .div-container-registrate{
+    	display: block;
+    	width: 100%;
+    	margin: auto;
+    }
+		.div-width-30{
+    	width: 100% !important;
+    	min-width: 100% !important;
+    }
+    .div-width-70{
+    	width: 100% !important;
+    	min-width: 100% !important;
+    }
+		#img-01{
+			display: none;
+		}
+		#img-02{
+			display: block;
+		}
+}
+@media only screen and (max-width: 990px) {
+    .div-30-width{
+    	height: auto;
+    }
+    .div-30-width{
+    	padding: 10px 0px 10px 0px;
+    }
+		.div-30-width .texto-izquierda{
+    	padding: 10px;
+    }        
+}
+@media only screen and (max-width: 950px) {
+    header{
+    	display: block;
+    	width: 100%;
+    }
+    nav{
+    	width: 100%;
+    	margin-top: 16px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .banner-izquierda{
+    	display: block;
+    	width: 100% !important;
+    	padding: 12px;
+    	margin-top: -90px !important;
+    	font-size: 21px;
+	    margin-left: 23px;
+	    width: 200px !important;
+    }
+    .banner-derecha{
+    	width: 100%;
+    	margin: auto;
+    	margin-left: 0px;
+    }
+    .div-banner-principal{
+    	text-align: center;
+    }
+    .div-ancho-fijo-formulario{
+    	width: 100%;
+    }
+    .div-width-70{
+    	width: 100%;
+    }
+    .contenedor-100{
+			width: 100%;
+			text-align: center;
+			vertical-align: middle;
+    	display: table-cell;
+	}
+ 	.div-width-30{
+ 		width: 100%;
+ 		min-width: 100%;
+ 		padding: 12px 0px 12px 0px;
+ 		margin-bottom: -62px !important;
+ 		padding-top: 10px !important;
+ 	}
+ 	.div-30-width{	 
+ 		text-align: center;
+ 	}
+ 	.div-ultima-caja{
+ 		background-color: #3a6bb8;
+ 	} 	
+ 	.div-90-ajustable{
+	    width: 100%;
+	    text-align: center;
+	    margin-bottom: 16px;
+ 	}
+
 }
