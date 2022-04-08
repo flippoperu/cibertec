@@ -86,10 +86,6 @@
     margin-top: 3px;
     float: right;
     cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 .msg hora:before{
     content:"\f017";
@@ -106,7 +102,6 @@ input.textarea {
     background: white;
     border: none;
     outline: none;
-    
     padding-right: 55px;
     color: #666;
     font-weight: 400;
