@@ -65,10 +65,6 @@
     box-shadow: 0px 0px 3px #eee;
     transition: all .4s cubic-bezier(0.565, -0.260, 0.255, 1.410);
     cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 @media screen and (max-width: 800px) {
     .msg img {
@@ -87,10 +83,6 @@
     margin-top: 3px;
     float: right;
     cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 .msg hora:before{
     content:"\f017";
@@ -107,7 +99,6 @@ input.textarea {
     background: white;
     border: none;
     outline: none;
-    
     padding-right: 55px;
     color: #666;
     font-weight: 400;
